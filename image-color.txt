@@ -1,0 +1,32 @@
+GET IMAGE COLOR PACKAGE
+
+
+IMAGE-COLOR
+
+https://github.com/colorjs/get-image-colors
+
+https://github.com/rish7/Colors-from-image
+
+https://github.com/Vibrant-Colors/node-vibrant
+
+
+IMAGE EDITOR
+
+https://www.npmjs.com/package/image-edit
+
+
+COLOR COLOR
+
+https://www.npmjs.com/package/colors
+
+https://github.com/chalk/chalk
+
+
+COLOR TABLE
+
+https://www.npmjs.com/package/cli-table
+
+https://www.npmjs.com/package/styled-cli-table
+
+
+how to upload npm package
