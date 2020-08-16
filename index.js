@@ -1,10 +1,22 @@
+var Table = require('cli-table');
+const chalk = require('chalk');
+
+const white = (text) => chalk.bold.rgb(255, 255, 255)(text);
+var table = new Table({
+    head: [
+        white('Color Name'),
+        white('Hex'),
+        white('Rgb'),
+    ]
+});
+
 const fs = require('fs')
 const path = require('path')
 const buffer = fs.readFileSync(path.join(__dirname, 'test.jpg'))
 const getColors = require('get-image-colors')
 const { GetColorName }  = require('hex-color-to-color-name');
 const namedColors = require('color-name-list'); 
-const chalk = require('chalk');
+
 
 function rgbColors(rgb){
     return rgb
@@ -17,15 +29,16 @@ function rgbColors(rgb){
             .split(",");
 }
 
-getColors(buffer,'image/jpg').then(colors => {
+let colors = [];
+getColors(buffer,'image/jpg').then((colors,err) => {
     colors.map(color => {
-        console.log(color.hex())
-        console.log(GetColorName(color.hex()))
-        
+        const hex = color.hex();
+        const rgb = color.css();
+        const name = GetColorName(color.hex()); 
+
         const c = rgbColors(color.css())
-
-        console.log(chalk.rgb(c[0], c[1], c[2]).bold(color.css()))
-    })
-})
-
-// console.log(chalk.bold.rgb(10, 100, 200)('Hello!'));
+        const ColorName = chalk.rgb(c[0], c[1], c[2]).bold(name)
+        table.push([ColorName,hex,rgb])
+    });
+    console.log(table.toString());
+}).catch((err)=>console.log(err))
