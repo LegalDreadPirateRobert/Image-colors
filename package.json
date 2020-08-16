@@ -17,7 +17,9 @@
   },
   "homepage": "https://github.com/AngularNinjaAvenger/Image-colors#readme",
   "dependencies": {
+    "chalk": "^4.1.0",
     "color-name-list": "^6.9.0",
+    "colors": "^1.4.0",
     "get-image-colors": "^2.0.1",
     "hex-color-to-color-name": "^1.0.2",
     "hex-to-color-name": "^1.0.1",
