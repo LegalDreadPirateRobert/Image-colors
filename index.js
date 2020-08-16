@@ -28,17 +28,14 @@ function rgbColors(rgb){
             .join("")
             .split(",");
 }
-
-let colors = [];
 getColors(buffer,'image/jpg').then((colors,err) => {
     colors.map(color => {
+        const c = rgbColors(color.css())
+        const colorText = (text) => chalk.rgb(c[0], c[1], c[2]).bold(text); 
         const hex = color.hex();
         const rgb = color.css();
         const name = GetColorName(color.hex()); 
-
-        const c = rgbColors(color.css())
-        const ColorName = chalk.rgb(c[0], c[1], c[2]).bold(name)
-        table.push([ColorName,hex,rgb])
+        table.push([colorText(name),colorText(hex),colorText(rgb)]);
     });
     console.log(table.toString());
 }).catch((err)=>console.log(err))
