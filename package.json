@@ -1,0 +1,23 @@
+{
+  "name": "imagecolor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AngularNinjaAvenger/Image-colors.git"
+  },
+  "author": "Emhonfubhegbe Osayi Bishop",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AngularNinjaAvenger/Image-colors/issues"
+  },
+  "homepage": "https://github.com/AngularNinjaAvenger/Image-colors#readme",
+  "dependencies": {
+    "get-image-colors": "^2.0.1",
+    "node-vibrant": "^3.1.5"
+  }
+}
