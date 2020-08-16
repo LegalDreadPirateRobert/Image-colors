@@ -9,4 +9,3 @@ getColors(buffer,'image/jpg').then(colors => {
         console.log(color.css())
     })
 })
-
