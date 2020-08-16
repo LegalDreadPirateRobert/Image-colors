@@ -4,7 +4,7 @@ const chalk = require('chalk');
 const white = (text) => chalk.bold.rgb(255, 255, 255)(text);
 var table = new Table({
     head: [
-        white('Color Name'),
+        white('Color'),
         white('Hex'),
         white('Rgb'),
     ]
@@ -28,10 +28,14 @@ function rgbColors(rgb){
             .join("")
             .split(",");
 }
-getColors(buffer,'image/jpg').then((colors,err) => {
+const options = {
+    count:20,
+    type:'image/jpg'
+}
+getColors(buffer,options).then((colors,err) => {
     colors.map(color => {
         const c = rgbColors(color.css())
-        const colorText = (text) => chalk.rgb(c[0], c[1], c[2]).bold(text); 
+        const colorText = (text) => chalk.rgb(c[0],c[1], c[2]).bold(text); 
         const hex = color.hex();
         const rgb = color.css();
         const name = GetColorName(color.hex()); 
