@@ -1,14 +1,18 @@
 {
   "name": "imagecolor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "main": "lib/index.js",
+  "preferGlobal": true,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AngularNinjaAvenger/Image-colors.git"
+  },
+  "scripts": {
+    "start": "node bin/global.js"
+  },
+  "bin": {
+      "getImageColor": "./bin/global.js"
   },
   "author": "Emhonfubhegbe Osayi Bishop",
   "license": "ISC",
