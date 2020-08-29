@@ -12,7 +12,7 @@
     "start": "node bin/global.js"
   },
   "bin": {
-      "getImageColor": "./bin/global.js"
+    "getImageColor": "./bin/global.js"
   },
   "author": "Emhonfubhegbe Osayi Bishop",
   "license": "ISC",
@@ -23,11 +23,7 @@
   "dependencies": {
     "chalk": "^4.1.0",
     "cli-table": "^0.3.1",
-    "color-name-list": "^6.9.0",
-    "colors": "^1.4.0",
     "get-image-colors": "^2.0.1",
-    "hex-color-to-color-name": "^1.0.2",
-    "hex-to-color-name": "^1.0.1",
-    "node-vibrant": "^3.1.5"
+    "hex-color-to-color-name": "^1.0.2"
   }
 }
