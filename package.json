@@ -1,6 +1,6 @@
 {
   "name": "imagecolor",
-  "version": "2.1.0",
+  "version": "2.2.1",
   "description": "",
   "main": "lib/script.js",
   "preferGlobal": true,
