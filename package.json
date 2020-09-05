@@ -2,7 +2,7 @@
   "name": "imagecolor",
   "version": "2.1.0",
   "description": "",
-  "main": "lib/index.js",
+  "main": "lib/script.js",
   "preferGlobal": true,
   "repository": {
     "type": "git",
@@ -12,7 +12,8 @@
     "start": "node bin/global.js"
   },
   "bin": {
-    "getImageColor": "./bin/global.js"
+    "getImageColor": "./bin/global.js",
+    "getimagecolor": "./bin/global.js"
   },
   "author": "Emhonfubhegbe Osayi Bishop",
   "license": "ISC",
