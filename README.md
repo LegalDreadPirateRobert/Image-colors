@@ -3,7 +3,7 @@
   <h2 align="center">Image Color</h2>
   <p align="center">A npm && cmd tool that extracts colors from images</p>
 </p>
-Image color is an npm package that extracts colors from images,it an also be used a command line tool for extracting colors :) .
+Image color is an npm package that extracts colors from images,it can also be used a command line tool :) .
 
 ## Installation
 
