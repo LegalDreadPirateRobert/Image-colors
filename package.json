@@ -15,6 +15,18 @@
     "getImageColor": "./bin/global.js",
     "getimagecolor": "./bin/global.js"
   },
+  "keywords": [
+    "color",
+    "palette",
+    "svg",
+    "gif",
+    "png",
+    "jpg",
+    "canvas",
+    "pixels",
+    "rgb",
+    "rgba"
+  ],
   "author": "Emhonfubhegbe Osayi Bishop",
   "license": "ISC",
   "bugs": {
